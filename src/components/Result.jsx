@@ -1,14 +1,14 @@
 import React from 'react'
 import { DataGrid } from '@mui/x-data-grid';
 import { useSelector, useDispatch } from 'react-redux';
-import {fetchQ1Data, fetchQ2Data, fetchQ3Data} from '../actions/tabledata';
+import {fetchQ1Data, fetchQ2Data, fetchQ3Data, fetchQ4Data, fetchQ5Data} from '../actions/tabledata';
 function Result() {
   const dispatch = useDispatch();
   const data = useSelector((state) => state.tabledata);
   const q = useSelector((state) => state.query)
   console.log(q);
   React.useEffect(() => {
-    if(q === "" || q.query === `SELECT * from users;`){
+    if(q === "" || q.query === "SELECT * from users;"){
       dispatch(fetchQ1Data());
     }
     else if(q.query==="SELECT * from users where gender=\"Male\";"){
@@ -17,7 +17,12 @@ function Result() {
     else if(q.query==="SELECT * from users where gender=\"Female\";"){
       dispatch(fetchQ3Data());
     }
-    
+    else if(q.query==="SELECT * from users where ip_address=\"86.228.202.112\" OR ip_address=\"125.47.224.245\";"){
+      dispatch(fetchQ4Data());
+    }
+    if(q.query==="SELECT * from users where id BETWEEN 401 AND 525;"){
+      dispatch(fetchQ5Data());
+    }
   }, [dispatch,q])
 
 

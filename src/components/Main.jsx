@@ -7,10 +7,10 @@ function Main() {
   return (
     <>
     <Grid container sx={{mt:2}} spacing={2}>
-        <Grid item sm={6} xs={6} md={3}>
+        <Grid item sm={6} xs={6} md={4}>
             <SQLQueries/>
         </Grid>
-        <Grid item sm={6} xs={6} md={8}>
+        <Grid item sm={6} xs={6} md={7}>
             <SQLEditor/>
         </Grid>
     </Grid>

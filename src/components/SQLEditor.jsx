@@ -1,8 +1,7 @@
 import React from 'react'
 import { Button, TextField } from '@mui/material'
 import PlayCircleIcon from '@mui/icons-material/PlayCircle';
-import { useSelector, useDispatch } from 'react-redux';
-import {fetchQ2Data} from '../actions/tabledata';
+import { useDispatch } from 'react-redux';
 import {setQ} from '../actions/query';
 
 function SQLEditor() {
