@@ -6,7 +6,7 @@ import Result from './Result';
 function Main() {
     return (
         <>
-            <Grid container sx={{ mt: 2, justifyContent: 'center' }} spacing={2}>
+            <Grid container sx={{ mt: 2, justifyContent: 'center' }} spacing={1}>
                 <Grid item sm={12} xs={11} md={4}>
                     <SQLQueries />
                 </Grid>
