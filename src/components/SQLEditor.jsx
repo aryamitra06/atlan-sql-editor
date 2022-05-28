@@ -1,12 +1,13 @@
 import React from 'react'
-import { Button, TextField } from '@mui/material'
+import { Button, TextField, Typography } from '@mui/material'
 import PlayCircleIcon from '@mui/icons-material/PlayCircle';
 import { useDispatch } from 'react-redux';
 import {setQ} from '../actions/query';
+import TerminalIcon from '@mui/icons-material/Terminal';
 
 function SQLEditor() {
     const dispatch = useDispatch();
-    const [query, setQuery] = React.useState("");
+    const [query, setQuery] = React.useState([]);
 
     const handleSubmit = async (e)=> {
         e.preventDefault()
@@ -18,6 +19,7 @@ function SQLEditor() {
       
     return (
         <form onSubmit={handleSubmit}>
+                <div style={{display: 'flex', gap: '5px', marginBottom: '15px'}}><TerminalIcon/><Typography>Compiler</Typography></div>
             <div style={{ display: 'flex' }}>
                 <TextField name='query' fullWidth multiline rows={3} onChange={handleOnChange}></TextField>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>

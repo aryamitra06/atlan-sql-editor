@@ -10,10 +10,11 @@ function Result() {
   const dispatch = useDispatch();
   const data = useSelector((state) => state.tabledata);
   const q = useSelector((state) => state.query)
-  console.log(q);
   React.useEffect(() => {
-    if(q === "" || q.query === "SELECT * from users;"){
+    if(q === ""){
       dispatch(fetchQ1Data());
+    }
+    else if(q.query === "SELECT * from users;"){
       toast.success('Query compiled successfully',{position: "bottom-center"});
     }
     else if(q.query==="SELECT * from users where gender=\"Male\";"){

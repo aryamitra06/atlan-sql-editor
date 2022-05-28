@@ -3,7 +3,7 @@ import { Divider, Accordion, AccordionDetails, AccordionSummary, Typography, Ico
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import toast, { Toaster } from 'react-hot-toast';
-
+import IntegrationInstructionsIcon from '@mui/icons-material/IntegrationInstructions';
 function SQLQueries() {
     const q1 = () => {
         navigator.clipboard.writeText(`SELECT * from users;`);
@@ -27,11 +27,12 @@ function SQLQueries() {
     }
     return (
         <>
+            <div style={{display: 'flex', gap: '5px', marginBottom: '15px'}}><IntegrationInstructionsIcon/><Typography>SQL Snippets</Typography></div>
             <Accordion>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                 >
-                    <Typography>Dummy Queries</Typography>
+                    <Typography>Dummy SQL Queries</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
