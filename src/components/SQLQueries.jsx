@@ -6,11 +6,12 @@ import toast, { Toaster } from 'react-hot-toast';
 
 function SQLQueries() {
     const q1 = () => {
-        navigator.clipboard.writeText("SELECT * from users;");
+        navigator.clipboard.writeText(`SELECT * from users;`);
         toast.success('Query copied to clipboard',{position: "bottom-center"});
     }
     const q2 = () => {
-
+        navigator.clipboard.writeText(`SELECT * from users where gender="Male";`);
+        toast.success('Query copied to clipboard',{position: "bottom-center"});
     }
     return (
         <>
@@ -26,7 +27,7 @@ function SQLQueries() {
                     </Typography>
                     <Divider/>
                     <Typography>
-                        SELECT * from users where; <IconButton onClick={q2}><ContentCopyIcon></ContentCopyIcon></IconButton>
+                        SELECT * from users where gender="Male"; <IconButton onClick={q2}><ContentCopyIcon></ContentCopyIcon></IconButton>
                     </Typography>
                 </AccordionDetails>
             </Accordion>
