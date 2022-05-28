@@ -11,13 +11,11 @@ function SQLEditor() {
     const handleSubmit = async (e)=> {
         e.preventDefault()
         dispatch(setQ(query))
-        console.log(query);
       }
       const handleOnChange = (e) => {
         setQuery({...query,[e.target.name]:e.target.value});
       }
-
-
+      
     return (
         <form onSubmit={handleSubmit}>
             <div style={{ display: 'flex' }}>

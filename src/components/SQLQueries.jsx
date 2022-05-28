@@ -49,6 +49,7 @@ function SQLQueries() {
                     <Typography>
                         SELECT * from users where ip_address="86.228.202.112" OR ip_address="125.47.224.245"; <IconButton onClick={q4}><ContentCopyIcon></ContentCopyIcon></IconButton>
                     </Typography>
+                    <Divider/>
                     <Typography>
                         SELECT * from users where id BETWEEN 401 AND 525; <IconButton onClick={q5}><ContentCopyIcon></ContentCopyIcon></IconButton>
                     </Typography>
