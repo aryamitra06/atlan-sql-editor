@@ -55,7 +55,6 @@ Deployed using Netlify. Check the link: https://atlan-task-sql-editor.netlify.ap
 
 ## Screenshots
 
-![image](https://user-images.githubusercontent.com/79497113/170854526-4de8db35-6027-4dd9-bc67-8b431626d70a.png)
+![image](https://user-images.githubusercontent.com/79497113/170855775-f5d397d5-db14-49fe-8569-28537a594986.png)
 
-![image](https://user-images.githubusercontent.com/79497113/170854583-db70a6d0-1951-463b-aa5a-b20529618145.png)
-
+![image](https://user-images.githubusercontent.com/79497113/170855794-3376f7cd-605f-47d8-8a18-b5031b459dd7.png)
