@@ -54,7 +54,6 @@ It contains users' data according to queries. Data Grid provides `pagination` as
 Deployed using Netlify. Check the link: https://atlan-task-sql-editor.netlify.app/
 
 ## Screenshots
+![image](https://user-images.githubusercontent.com/79497113/170876230-60a34478-6c6e-467e-9670-69d6c54e0b90.png)
 
-![image](https://user-images.githubusercontent.com/79497113/170855775-f5d397d5-db14-49fe-8569-28537a594986.png)
-
-![image](https://user-images.githubusercontent.com/79497113/170855794-3376f7cd-605f-47d8-8a18-b5031b459dd7.png)
+![image](https://user-images.githubusercontent.com/79497113/170876292-6b38059d-f9d5-44c3-82df-816115d569c8.png)
