@@ -27,12 +27,12 @@ function SQLQueries() {
     }
     return (
         <>
-            <div style={{display: 'flex', gap: '5px', marginBottom: '15px'}}><IntegrationInstructionsIcon/><Typography>SQL Snippets</Typography></div>
+            <div style={{display: 'flex', gap: '5px', marginBottom: '15px'}}><IntegrationInstructionsIcon/><Typography>Snippets</Typography></div>
             <Accordion>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                 >
-                    <Typography>Dummy SQL Queries</Typography>
+                    <Typography>SQL Queries</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
