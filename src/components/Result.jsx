@@ -1,5 +1,5 @@
 import React from 'react'
-import { DataGrid } from '@mui/x-data-grid';
+import { DataGrid, GridToolbar } from '@mui/x-data-grid';
 import { useSelector, useDispatch } from 'react-redux';
 import {fetchQ1Data, fetchQ2Data, fetchQ3Data, fetchQ4Data, fetchQ5Data} from '../actions/tabledata';
 import { Typography } from '@mui/material';
@@ -78,12 +78,10 @@ function Result() {
         rows={data}
         columns={columns}
         disableSelectionOnClick
+        components={{
+          Toolbar: GridToolbar,
+        }}
         initialState={{
-          filter: {
-            filterModel: {
-              items: [{ columnField: '', operatorValue: '>', value: '' }],
-            },
-          },
         }}
       />
       <Toaster/>
