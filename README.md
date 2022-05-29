@@ -1,70 +1,61 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Task - Atlan Frontend Engineer
+# SQL Editor
+A web application that executes predefined SQL queries over a table `users` to display the result to user. 
+## Overview
+User can type their SQL query in the input field or can `copy to clipboard` a query from accordion. After hitting the `RUN` button result will be immediately displayed from a `JSON "users" data` using `axios` (GET) and it changes state of the applicaton according to each query with the `Redux state management` to Data Grid section. 
+It contains users' data according to queries. Data Grid provides `pagination` as well as `rows per page` features by default.
 
-## Available Scripts
+## Dependencies
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@mui/icons-material": "^5.8.0",
+    "@mui/material": "^5.8.1",
+    "@mui/x-data-grid": "^5.11.1",
+    "axios": "^0.27.2",
+    "react-hot-toast": "^2.2.0",
+    "react-redux": "^8.0.2",
+    "redux": "^4.2.0",
+    "redux-thunk": "^2.4.1",
+## Predefined Queries
+`SELECT * from users;`
 
-In the project directory, you can run:
+`SELECT * from users where gender="Male";`
 
-### `npm start`
+`SELECT * from users where gender="Female";`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+`SELECT * from users where ip_address="86.228.202.112" OR ip_address="125.47.224.245";`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+`SELECT * from users where id BETWEEN 401 AND 525;`
 
-### `npm test`
+## Features
+- Standard Interface: React MaterialUI made this app very easy to use with simple prototype to represent.
+- Redux State Management: Redux is used for state management to execute queries and keeping the application lightweight and blazing fast.
+- Responsive Design: This app is completely responsive for all devices https://search.google.com/test/mobile-friendly/result?id=2cCkImBBeOWPp_Ea_nq5Bg
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Performance 
+- GTMetrix
 
-### `npm run build`
+![gt](https://user-images.githubusercontent.com/79497113/170854451-2449c11b-d061-4fb2-be37-3f43287e23f7.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Chrome Lighhouse
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![light](https://user-images.githubusercontent.com/79497113/170854470-8324b1c3-ac6d-4bfb-9eff-19e001408205.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Pingdom
 
-### `npm run eject`
+![pingdom](https://user-images.githubusercontent.com/79497113/170854479-8dc6a7bc-9885-4b94-8b2a-2766dac4a740.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Optimisations
+- Redux: As per the official documentation of React Redux, `React Redux in particular is heavily optimized to cut down on unnecessary re-renders.` I tried to management all the query cases of SQL using Redux. It also makes codebase very attractive and improves readability.
+- Pagination: MUI pagination allows to fetch data accordingly to user. That means API doesn't immediately fetch all data at a time which saves internet data and improves user experience.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Deployment
+Deployed using Netlify. Check the link: https://atlan-task-sql-editor.netlify.app/
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Screenshots
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![image](https://user-images.githubusercontent.com/79497113/170854526-4de8db35-6027-4dd9-bc67-8b431626d70a.png)
 
-## Learn More
+![image](https://user-images.githubusercontent.com/79497113/170854583-db70a6d0-1951-463b-aa5a-b20529618145.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
