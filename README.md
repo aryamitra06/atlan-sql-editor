@@ -3,7 +3,7 @@
 # SQL Editor
 A Redux based web application built in ReactJS that executes predefined SQL queries over a table `users` to display the result to user. 
 ## Overview
-User can type their SQL query in the input field or can `copy to clipboard` a query from accordion. After hitting the `RUN` button result will be immediately displayed from a `JSON "users" data` using `axios` (GET) and it changes state of the applicaton according to each query with the `Redux state management` to Data Grid section. 
+Users can type their SQL query in the input field or can `copy to clipboard` a query from accordion. After hitting the `RUN` button result will be immediately displayed from a `JSON "users" data` using `axios` (GET) and it changes state of the applicaton according to each query with the `Redux state management` to Data Grid section. 
 It contains users' data according to queries. Data Grid provides `pagination` as well as `rows per page` features by default.
 
 ## Dependencies
