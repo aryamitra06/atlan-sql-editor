@@ -40,7 +40,7 @@ It contains users' data according to queries. Data Grid provides `pagination` as
 
 - Chrome Lighhouse
 
-![light](https://user-images.githubusercontent.com/79497113/170854470-8324b1c3-ac6d-4bfb-9eff-19e001408205.png)
+![image](https://user-images.githubusercontent.com/79497113/171037961-6c5019d6-98e3-475d-bb33-a38ca7a86adc.png)
 
 - Pingdom
 
